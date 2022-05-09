@@ -1,3 +1,36 @@
+// Gioco dei dadi
+
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+
+// Stabilire il vincitore, in base a chi fa il punteggio più alto.
+
+const buttonPlay = document.querySelector('.play');
+console.log(buttonPlay);
+
+buttonPlay.addEventListener('click',
+    function () {
+        const player1 = Math.floor(Math.random() * 6) + 1;
+        console.log(player1);
+        const playerPc = Math.floor(Math.random() * 6) + 1;
+        console.log(playerPc);
+
+        if (player1 > playerPc) {
+            console.log("win");   
+        } else if (player1 === playerPc) {
+            console.log("draw");
+        } else {
+            console.log("lose");
+        }
+    }
+
+)
+
+Math.floor(Math.random);
+
+
+
+// ----------------LEZIONE----------------
+
 // const myList = document.getElementById('listaNomi');
 
 // creazione dell'array iniziale
@@ -63,15 +96,15 @@
 
 // abbiamo un array di numeri interi
 
-const listaNum = [12, 11, 3, 4, 77, 86, 13, 15];
-console.log(listaNum);
+// const listaNum = [12, 11, 3, 4, 77, 86, 13, 15];
+// console.log(listaNum);
 
 // stampiamo solo i numeri dispari
-for (let i = 0; i < listaNum.length; i++){
+// for (let i = 0; i < listaNum.length; i++){
 
-    let numIter = listaNum[i];
+//     let numIter = listaNum[i];
 
-    if (numIter % 2 !== 0){
-        console.log(numIter);
-    }
-}
+//     if (numIter % 2 !== 0){
+//         console.log(numIter);
+//     }
+// }
