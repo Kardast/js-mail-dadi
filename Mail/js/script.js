@@ -13,12 +13,6 @@
 const emailList = ['pinco@gmail.com', 'pallino@gmail.com', 'gatto@gmail.com', 'cane@gmail.com'];
 console.log(emailList);
 
-let userInput = document.querySelector('main .email_input').value;
-
-// prompt("inserisci la tua email");
-// document.querySelector('main .email_input');
-console.log(userInput);
-
 const userButton = document.querySelector('main .email_button');
 console.log(userButton);
 
@@ -27,6 +21,9 @@ console.log(userOutput);
 
 userButton.addEventListener('click',
     function() {
+
+        let userInput = document.querySelector('main .email_input').value;
+        console.log(userInput);
 
         let check = false;
 
@@ -38,9 +35,10 @@ userButton.addEventListener('click',
 
         if (check === true){
             console.log("ok");
-            // userOutput.innerHTML += `<li class="liclass_prova liclass_prova-${i}"> ${iscrittoN} </li>`;
+            userOutput.innerHTML += "ok";
         } else{
             console.log("no");
+            userOutput.innerHTML += "no";
         }
     }
 )
