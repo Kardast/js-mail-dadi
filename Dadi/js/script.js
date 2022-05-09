@@ -6,6 +6,7 @@
 
 const buttonPlay = document.querySelector('.play');
 console.log(buttonPlay);
+let finalResult = document.querySelector('.result');
 
 buttonPlay.addEventListener('click',
     function () {
@@ -16,18 +17,17 @@ buttonPlay.addEventListener('click',
 
         if (player1 > playerPc) {
             console.log("win");   
+            finalResult.innerHTML = "Hai vinto";
         } else if (player1 === playerPc) {
             console.log("draw");
+            finalResult.innerHTML = "Hai pareggiato";
         } else {
             console.log("lose");
+            finalResult.innerHTML = "Hai perso";
         }
     }
 
 )
-
-Math.floor(Math.random);
-
-
 
 // ----------------LEZIONE----------------
 
